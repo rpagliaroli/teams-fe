@@ -2,26 +2,29 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.7.
 
-## Development server
+## Dependencies
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Use npm i to install all dependencies needed
 
-## Code scaffolding
+## Run
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Use ng serve (--o) to start the project. Automatic reload is enabled
 
-## Build
+###Structure
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Core
 
-## Running unit tests
+This directory contains root-scoped services, static components
+such as navbar and footer, interceptors, guard, constants, enums,
+utils, and universal models.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+#Shared
 
-## Running end-to-end tests
+This directory should contain all the reusable modules,
+lazy loaded feature modules required to operate.
+You should add commonly used directives, pipes and components here.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+#Features
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Feature modules deliver user experience dedicated to a particular application feature,
+grouping components, services, models and other functionality that belongs together.

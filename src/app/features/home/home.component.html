@@ -1,1 +1,29 @@
-<p>home works!</p>
+<div class="filters">
+    <mat-form-field>
+        <mat-label>Ordina per</mat-label>
+        <mat-select
+            panelClass="sort-select"
+            [(ngModel)]="sort"
+        ><mat-option value="name">Nome</mat-option>
+        <mat-option value="year">Anno</mat-option>
+    </mat-select>
+    </mat-form-field>
+</div>
+
+<div class="teams">
+    <div class="team">
+        <div class="team-thumb-container">
+            <img src="https://picsum.photos/300"
+                alt="team"
+                class="team-thumbnail">
+        </div>
+    </div>
+    <!-- <div class="team-description">
+        <p class="team-name">Squadra</p>
+        <div class="team-platforms">
+            <img src="https://picsum.photos/75"
+                alt="team"
+                class="team-platform">
+        </div>
+    </div> -->
+</div>
